@@ -1,5 +1,7 @@
 package semaphore_exchanger.semaphore_test_1;
 
+import semaphore_exchanger.thread.AbstractService;
+
 import java.util.concurrent.Semaphore;
 
 /**
@@ -17,7 +19,7 @@ import java.util.concurrent.Semaphore;
  * @package semaphore_exchanger
  * @date 2019-03-26 11:04
  */
-public class Service {
+public class Service implements AbstractService{
 //    相当于互斥锁
     private Semaphore semaphore = new Semaphore(1);
 

@@ -1,5 +1,7 @@
 package semaphore_exchanger.semaphore_test_2;
 
+import semaphore_exchanger.thread.ThreadA;
+
 import java.util.concurrent.Semaphore;
 
 /**

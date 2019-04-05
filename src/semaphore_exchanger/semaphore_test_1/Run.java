@@ -1,5 +1,9 @@
 package semaphore_exchanger.semaphore_test_1;
 
+import semaphore_exchanger.thread.ThreadA;
+import semaphore_exchanger.thread.ThreadB;
+import semaphore_exchanger.thread.ThreadC;
+
 /**
  * @author HT
  * @version V1.0

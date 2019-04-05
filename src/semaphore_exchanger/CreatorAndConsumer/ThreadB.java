@@ -1,21 +1,20 @@
-package semaphore_exchanger.semaphore_test_1;
+package semaphore_exchanger.CreatorAndConsumer;
 
 /**
  * @author HT
  * @version V1.0
- * @package semaphore_exchanger.Semaphore_Test_1
  * @date 2019-03-26 11:09
  */
 public class ThreadB extends Thread{
-    private Service service;
+    private RepastService service;
 
-    public ThreadB(Service service) {
+    public ThreadB(RepastService service) {
         super();
         this.service = service;
     }
 
     @Override
     public void run() {
-        service.testMethod();
+        service.get();
     }
 }

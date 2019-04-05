@@ -1,15 +1,14 @@
-package semaphore_exchanger.semaphore_test_1;
+package semaphore_exchanger.thread;
 
 /**
  * @author HT
  * @version V1.0
- * @package semaphore_exchanger.Semaphore_Test_1
  * @date 2019-03-26 11:09
  */
 public class ThreadC extends Thread{
-    private Service service;
+    private AbstractService service;
 
-    public ThreadC(Service service) {
+    public ThreadC(AbstractService service) {
         super();
         this.service = service;
     }
