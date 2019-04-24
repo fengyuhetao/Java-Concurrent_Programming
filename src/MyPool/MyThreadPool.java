@@ -84,12 +84,9 @@ public class MyThreadPool {
                     Runnable queueTask = taskQueue.poll();
                     if(queueTask != null) {
                         queueTask.run();
-
                     }
                 }
-
             }
         }
     }
-
 }
