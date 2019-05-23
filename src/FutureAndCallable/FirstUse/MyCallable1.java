@@ -8,17 +8,22 @@ import java.util.concurrent.Callable;
  * @package FutureAndCallable.FirstUse
  * @date 2019-04-20 21:58
  */
-public class MyCallable implements Callable<String> {
+public class MyCallable1 implements Callable<String> {
     private int age;
 
-    public MyCallable(int age) {
+    public MyCallable1(int age) {
         super();
         this.age = age;
     }
 
     public String call() throws Exception {
-        Thread.sleep(4000);
-        System.out.println("4秒执行完了");
+        int i = 0;
+        while(i == 0) {
+            if(Thread.currentThread().isInterrupted()) {
+                throw new InterruptedException();
+            }
+            System.out.println("正在运行中");
+        }
         return " 返回值 年龄是:" + age;
     }
 }
